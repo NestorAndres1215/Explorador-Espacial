@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Explorador Espacial</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <canvas id="stars"></canvas>
+    <div class="container">
+        <h1><i class="fas fa-rocket"></i> 🌌 Explorador Espacial</h1>
+
+        <div>
+            <label for="cuerpo"><i class="fas fa-globe"></i> Ver información de:</label>
+            <select id="cuerpo" onchange="mostrarCuerpo()">
+                <option value="">-- Selecciona --</option>
+                <option value="sol"><i class="fas fa-sun"></i> Sol</option>
+                <option value="luna"><i class="fas fa-moon"></i> Luna</option>
+                <option value="mercurio">Mercurio</option>
+                <option value="venus">Venus</option>
+                <option value="tierra"><i class="fas fa-globe"></i> Tierra</option>
+                <option value="marte">Marte</option>
+                <option value="jupiter">Júpiter</option>
+                <option value="saturno">Saturno</option>
+                <option value="urano">Urano</option>
+                <option value="neptuno">Neptuno</option>
+            </select>
+        </div>
+
+        <div class="card" id="card">
+            <h2 id="titulo"><i class="fas fa-circle-notch galaxy-icon"></i> La Vía Láctea</h2>
+            <img id="imagen"
+                src="https://humanidades.com/wp-content/uploads/2018/08/via-lactea-e1535495054860.jpg"
+                alt="Vía Láctea">
+            <p id="description">La Vía Láctea es nuestra galaxia, un hogar cósmico con más de 100 mil millones de
+                estrellas. Su belleza en forma de espiral y su inmensidad nos invitan a explorar los misterios del
+                universo.</p>
+            <a href="#cuerpo" class="explore-btn">¡Comienza tu viaje!</a>
+        </div>
+    </div>
+
+    <script src="script.js">
+    
+    </script>
+</body>
+
+</html>
